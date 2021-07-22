@@ -16,7 +16,7 @@ li {
 }
 
 .social-proof {
-  padding: 5rem;
+  padding: 8rem;
   margin: 5rem;
   -webkit-box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -36,7 +36,7 @@ li {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 
 .text h1 {
@@ -73,7 +73,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  width: 85%;
   margin-bottom: 1rem;
 }
 
@@ -104,4 +104,114 @@ li {
 
 .item__stars > * {
   color: goldenrod;
+}
+
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.review-card {
+  padding: 2rem;
+  background-color: #502050;
+  border-radius: 5px;
+  width: 32%;
+}
+
+.review-card-1 {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.review-card-3 {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.user-img {
+  margin-right: 1rem;
+}
+
+.user-img img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.user-info .name {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.user-info .title {
+  color: #937b92;
+  font-weight: lighter;
+}
+
+.review {
+  font-size: 0.7rem;
+  line-height: 1.6;
+  color: white;
+}
+
+@media screen and (max-width: 1100px) {
+  .social-proof {
+    margin: 0;
+  }
+  .social-proof__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .text {
+    margin-bottom: 3rem;
+    margin-right: 0;
+  }
+  .item-1,
+  .item-2,
+  .item-3 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .item__stars {
+    margin-bottom: 1rem;
+  }
+  .reviews {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .review-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .social-proof {
+    padding: 4rem 1rem;
+  }
 }
